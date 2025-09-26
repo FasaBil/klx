@@ -1,0 +1,47 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Extract data from the table
+    const tableRows = document.querySelectorAll('.token-table tbody tr');
+    const labels = [];
+    const data = [];
+
+    tableRows.forEach((row, index) => {
+        if (index < tableRows.length - 1) { // Skip the "Total" row
+            const cells = row.querySelectorAll('td');
+            labels.push(cells[0].innerText); // Category
+            data.push(parseFloat(cells[2].innerText)); // Percentage
+        }
+    });
+
+    // Create the chart
+    const ctx = document.createElement('canvas');
+    document.querySelector('.chart-container').innerHTML = ''; // Clear existing content
+    document.querySelector('.chart-container').appendChild(ctx);
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: [
+                    '#FFD700', '#FF5733', '#33FF57', '#3357FF',
+                    '#FF33A1', '#A133FF', '#33FFF5', '#F5FF33'
+                ],
+                borderWidth: 1,
+                borderColor: '#111',
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#E0E0E0'
+                    }
+                }
+            }
+        }
+    });
+</script>
