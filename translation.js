@@ -130,6 +130,14 @@ class TranslationSystem {
                 category_staking: "Staking & Reward Pool",
                 category_total: "Total",
                 
+                // Gallery Section
+                gallery_title: "Our <span class='gold-text'>Gallery</span>",
+                gallery_subtitle: "Explore our journey through images and videos",
+                gallery_video1_title: "KLX Digital Introduction",
+                gallery_video1_desc: "Learn about our tokenized gold mining project",
+                gallery_video2_title: "Behind the Scenes",
+                gallery_video2_desc: "Exclusive look at our mining operations",
+
                 // Timer labels
                 timer_days: "Days",
                 timer_hours: "Hours",
@@ -261,6 +269,14 @@ class TranslationSystem {
                 category_staking: "Pool Staking & Reward",
                 category_total: "Total",
                 
+                // Gallery Section
+                gallery_title: "<span class='gold-text'>Galeri</span> Kami",
+                gallery_subtitle: "Jelajahi perjalanan kami melalui gambar dan video",
+                gallery_video1_title: "Pengenalan KLX Digital",
+                gallery_video1_desc: "Pelajari tentang proyek penambangan emas tokenisasi kami",
+                gallery_video2_title: "Di Balik Layar",
+                gallery_video2_desc: "Pandangan eksklusif operasi penambangan kami",
+
                 // Timer labels
                 timer_days: "Hari",
                 timer_hours: "Jam",
@@ -316,6 +332,12 @@ class TranslationSystem {
             roadmap_subtitle: '.roadmap-section .section-subtitle',
             roadmap_items: '.timeline-item',
             
+            // Gallery
+            gallery_title: '.gallery-section .section-title',
+            gallery_subtitle: '.gallery-section .section-subtitle',
+            gallery_video_titles: '.video-info h4',
+            gallery_video_descs: '.video-info p',
+
             // Tokenomics
             tokenomics_title: '.tokenomics-section .section-title',
             tokenomics_subtitle: '.tokenomics-section .section-subtitle',
@@ -460,6 +482,20 @@ class TranslationSystem {
                 this.updateElement(matterCards[3].querySelector('p'), t.matter4_desc);
                 this.updateElement(matterCards[4].querySelector('h3'), t.matter5_title);
                 this.updateElement(matterCards[4].querySelector('p'), t.matter5_desc);
+            }
+
+            // Update gallery section
+            this.updateElement(this.selectors.gallery_title, t.gallery_title);
+            this.updateElement(this.selectors.gallery_subtitle, t.gallery_subtitle);
+
+            // Update gallery video info
+            const videoTitles = document.querySelectorAll(this.selectors.gallery_video_titles);
+            const videoDescs = document.querySelectorAll(this.selectors.gallery_video_descs);
+            if (videoTitles.length >= 2 && videoDescs.length >= 2) {
+                videoTitles[0].innerHTML = t.gallery_video1_title;
+                videoDescs[0].innerHTML = t.gallery_video1_desc;
+                videoTitles[1].innerHTML = t.gallery_video2_title;
+                videoDescs[1].innerHTML = t.gallery_video2_desc;
             }
 
             // Update roadmap section
