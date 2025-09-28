@@ -1,6 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    // Extract data from the table
+// Extract data from the table
     const tableRows = document.querySelectorAll('.token-table tbody tr');
     const labels = [];
     const data = [];
@@ -25,11 +23,11 @@
             datasets: [{
                 data: data,
                 backgroundColor: [
-                    '#FFD700', '#FF5733', '#33FF57', '#3357FF',
-                    '#FF33A1', '#A133FF', '#33FFF5', '#F5FF33'
+                    '#F4D03F', '#E59866', '#76D7C4', '#5DADE2',
+                    '#AF7AC5', '#F1948A', '#85C1E9', '#F9E79F'
                 ],
                 borderWidth: 1,
-                borderColor: '#111',
+                borderColor: '#222',
             }]
         },
         options: {
@@ -38,10 +36,19 @@
                 legend: {
                     position: 'bottom',
                     labels: {
-                        color: '#E0E0E0'
+                        color: '#E0E0E0',
+                        font: {
+                            size: 14
+                        }
                     }
+                },
+                tooltip: {
+                    backgroundColor: '#333',
+                    titleColor: '#FFD700',
+                    bodyColor: '#E0E0E0',
+                    borderColor: '#555',
+                    borderWidth: 1
                 }
             }
-        }
+        },
     });
-</script>

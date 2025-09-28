@@ -1,3 +1,5 @@
+// TranslationSystem class and initialization code
+// ...existing translation.js code here...
 // Translation System for KLX Digital Website
 // Author: GitHub Copilot
 // Version: 1.0
@@ -138,11 +140,63 @@ class TranslationSystem {
                 gallery_video2_title: "Behind the Scenes",
                 gallery_video2_desc: "Exclusive look at our mining operations",
 
+                // FAQ Section
+                faq_title: "Frequently Asked <span class='gold-text'>Questions</span>",
+                faq_subtitle: "Get answers to the most common questions about KLX Digital",
+                faq_q1: "Is KLX Digital a Real World Asset (RWA)?",
+                faq_a1: "Yes. $KLX is backed by 5% book value of PT Kristalin Eka Lestari's gold mining operations.",
+                faq_q2: "How is the backing verified?",
+                faq_a2: "All certifications and legal agreements are stored as NFTs on Ethereum, verifiable by anyone.",
+                faq_q3: "Where can I buy $KLX?",
+                faq_a3: "$KLX will be available on DEX and selected CEX.",
+                faq_q4: "Is KLX regulated?",
+                faq_a4: "KLX is issued under UAE regulations, ensuring legal compliance for global investors.",
+
                 // Timer labels
                 timer_days: "Days",
                 timer_hours: "Hours",
                 timer_minutes: "Minutes",
                 timer_seconds: "Seconds"
+                // Contact Section
+                ,contact_title: "Get In Touch"
+                ,contact_subtitle: "Stay connected with KLX Token"
+                ,contact_entity: "Kristalin Digital FZ-LLC (UAE)"
+                ,contact_backing_label: "Backing Entity"
+                ,contact_backing: "PT Kristalin Eka Lestari (Indonesia)"
+                ,contact_token_label: "Token"
+                ,contact_token: "KLX Digital ($KLX)"
+                ,contact_network_label: "Network"
+                ,contact_network: "Ethereum (ERC 20)"
+                ,contact_email_label: "Email"
+                ,contact_email: "admin@myklx.io"
+                ,contact_social_label: "Social Media"
+                ,contact_instagram: "Instagram"
+                ,contact_tiktok: "TikTok"
+                ,contact_linkedin: "LinkedIn"
+                ,contact_youtube: "YouTube"
+                ,contact_medium: "Medium"
+                ,contact_twitter: "Twitter / X"
+                ,contact_telegram: "Telegram"
+                ,contact_whitepaper_label: "Whitepaper"
+                ,contact_whitepaper_btn: "Read Whitepaper"
+                
+                // Footer Section
+                ,footer_description: "Blockchain-based investment solution with high security and future profit potential."
+                ,footer_quick_links: "Quick Links"
+                ,footer_about: "About Us"
+                ,footer_vision: "Vision & Mission"
+                ,footer_faq: "FAQ"
+                ,footer_whitepaper: "Whitepaper"
+                ,footer_contact: "Contact"
+                ,footer_roadmap: "Roadmap"
+                ,footer_tokenomics: "Tokenomics"
+                ,footer_newsletter: "Newsletter"
+                ,newsletter_description: "Get the latest news about crypto & KLX Token directly in your inbox."
+                ,footer_get_touch: "Get In Touch"
+                ,footer_address: "123 Menara 165, Jakarta Selatan 12560"
+                ,footer_follow_us: "Follow Us"
+                ,social_description: "Follow us on social media for the latest updates:"
+                ,footer_copyright: "© 2025, All Right Reserved. Designed By myklx.io"
             },
             
             id: {
@@ -277,11 +331,63 @@ class TranslationSystem {
                 gallery_video2_title: "Di Balik Layar",
                 gallery_video2_desc: "Pandangan eksklusif operasi penambangan kami",
 
+                // FAQ Section
+                faq_title: "Pertanyaan yang Sering <span class='gold-text'>Ditanyakan</span>",
+                faq_subtitle: "Dapatkan jawaban untuk pertanyaan paling umum tentang KLX Digital",
+                faq_q1: "Apakah KLX Digital adalah Real World Asset (RWA)?",
+                faq_a1: "Ya. $KLX didukung oleh 5% nilai buku operasi penambangan emas PT Kristalin Eka Lestari.",
+                faq_q2: "Bagaimana dukungan tersebut diverifikasi?",
+                faq_a2: "Semua sertifikasi dan perjanjian hukum disimpan sebagai NFT di Ethereum, dapat diverifikasi oleh siapa saja.",
+                faq_q3: "Di mana saya bisa membeli $KLX?",
+                faq_a3: "$KLX akan tersedia di DEX dan CEX terpilih.",
+                faq_q4: "Apakah KLX diregulasi?",
+                faq_a4: "KLX diterbitkan di bawah regulasi UAE, memastikan kepatuhan hukum untuk investor global.",
+
                 // Timer labels
                 timer_days: "Hari",
                 timer_hours: "Jam",
                 timer_minutes: "Menit",
                 timer_seconds: "Detik"
+                // Contact Section
+                ,contact_title: "Hubungi Kami"
+                ,contact_subtitle: "Tetap terhubung dengan KLX Token"
+                ,contact_entity: "Kristalin Digital FZ-LLC (UAE)"
+                ,contact_backing_label: "Entitas Pendukung"
+                ,contact_backing: "PT Kristalin Eka Lestari (Indonesia)"
+                ,contact_token_label: "Token"
+                ,contact_token: "KLX Digital ($KLX)"
+                ,contact_network_label: "Jaringan"
+                ,contact_network: "Ethereum (ERC 20)"
+                ,contact_email_label: "Email"
+                ,contact_email: "admin@myklx.io"
+                ,contact_social_label: "Media Sosial"
+                ,contact_instagram: "Instagram"
+                ,contact_tiktok: "TikTok"
+                ,contact_linkedin: "LinkedIn"
+                ,contact_youtube: "YouTube"
+                ,contact_medium: "Medium"
+                ,contact_twitter: "Twitter / X"
+                ,contact_telegram: "Telegram"
+                ,contact_whitepaper_label: "Whitepaper"
+                ,contact_whitepaper_btn: "Baca Whitepaper"
+                
+                // Footer Section
+                ,footer_description: "Solusi investasi berbasis blockchain dengan keamanan tinggi dan potensi keuntungan masa depan."
+                ,footer_quick_links: "Tautan Cepat"
+                ,footer_about: "Tentang Kami"
+                ,footer_vision: "Visi & Misi"
+                ,footer_faq: "FAQ"
+                ,footer_whitepaper: "Whitepaper"
+                ,footer_contact: "Kontak"
+                ,footer_roadmap: "Roadmap"
+                ,footer_tokenomics: "Tokenomik"
+                ,footer_newsletter: "Newsletter"
+                ,newsletter_description: "Dapatkan berita terbaru seputar crypto & KLX Token langsung di inbox kamu."
+                ,footer_get_touch: "Hubungi Kami"
+                ,footer_address: "123 Menara 165, Jakarta Selatan 12560"
+                ,footer_follow_us: "Ikuti Kami"
+                ,social_description: "Ikuti kami di media sosial untuk update terbaru:"
+                ,footer_copyright: "© 2025, Semua Hak Dilindungi. Dirancang Oleh myklx.io"
             }
         };
 
@@ -338,6 +444,50 @@ class TranslationSystem {
             gallery_video_titles: '.video-info h4',
             gallery_video_descs: '.video-info p',
 
+            // FAQ
+            faq_title: '.faq-section .section-title',
+            faq_subtitle: '.faq-section .section-subtitle',
+            faq_questions: '.faq-question h4',
+                        faq_answers: '.faq-answer p',
+            
+            // Footer
+            footer_description: '#footer-description',
+            footer_quick_links: '#footer-quick-links',
+            footer_about: '#footer-about',
+            footer_vision: '#footer-vision',
+            footer_faq: '#footer-faq',
+            footer_whitepaper: '#footer-whitepaper',
+            footer_contact: '#footer-contact',
+            footer_roadmap: '#footer-roadmap',
+            footer_tokenomics: '#footer-tokenomics',
+            footer_newsletter: '#footer-newsletter',
+            newsletter_description: '#newsletter-description',
+            footer_get_touch: '#footer-get-touch',
+            footer_address: '#footer-address',
+            footer_follow_us: '#footer-follow-us',
+            social_description: '#social-description',
+            footer_copyright: '#footer-copyright',
+
+            // Tokenomics
+            
+            // Footer
+            footer_description: '#footer-description',
+            footer_quick_links: '#footer-quick-links',
+            footer_about: '#footer-about',
+            footer_vision: '#footer-vision',
+            footer_faq: '#footer-faq',
+            footer_whitepaper: '#footer-whitepaper',
+            footer_contact: '#footer-contact',
+            footer_roadmap: '#footer-roadmap',
+            footer_tokenomics: '#footer-tokenomics',
+            footer_newsletter: '#footer-newsletter',
+            newsletter_description: '#newsletter-description',
+            footer_get_touch: '#footer-get-touch',
+            footer_address: '#footer-address',
+            footer_follow_us: '#footer-follow-us',
+            social_description: '#social-description',
+            footer_copyright: '#footer-copyright',
+
             // Tokenomics
             tokenomics_title: '.tokenomics-section .section-title',
             tokenomics_subtitle: '.tokenomics-section .section-subtitle',
@@ -380,6 +530,48 @@ class TranslationSystem {
     }
 
     translatePage(lang) {
+    // Contact Section
+    this.updateElement('#contact-title', t.contact_title);
+    this.updateElement('#contact-subtitle', t.contact_subtitle);
+    this.updateElement('#contact-entity', t.contact_entity);
+    this.updateElement('#contact-backing-label', t.contact_backing_label);
+    this.updateElement('#contact-backing', t.contact_backing);
+    this.updateElement('#contact-token-label', t.contact_token_label);
+    this.updateElement('#contact-token', t.contact_token);
+    this.updateElement('#contact-network-label', t.contact_network_label);
+    this.updateElement('#contact-network', t.contact_network);
+    this.updateElement('#contact-email-label', t.contact_email_label);
+    this.updateElement('#contact-email', t.contact_email);
+    this.updateElement('#contact-social-label', t.contact_social_label);
+    this.updateElement('#contact-instagram', t.contact_instagram);
+    this.updateElement('#contact-tiktok', t.contact_tiktok);
+    this.updateElement('#contact-linkedin', t.contact_linkedin);
+    this.updateElement('#contact-youtube', t.contact_youtube);
+    this.updateElement('#contact-medium', t.contact_medium);
+    this.updateElement('#contact-twitter', t.contact_twitter);
+    this.updateElement('#contact-telegram', t.contact_telegram);
+    this.updateElement('#contact-whitepaper-label', t.contact_whitepaper_label);
+            this.updateElement('#contact-whitepaper-btn', t.contact_whitepaper_btn);
+        
+        // Update Footer section
+        this.updateElement('#footer-description', t.footer_description);
+        this.updateElement('#footer-quick-links', t.footer_quick_links);
+        this.updateElement('#footer-about', t.footer_about);
+        this.updateElement('#footer-vision', t.footer_vision);
+        this.updateElement('#footer-faq', t.footer_faq);
+        this.updateElement('#footer-whitepaper', t.footer_whitepaper);
+        this.updateElement('#footer-contact', t.footer_contact);
+        this.updateElement('#footer-roadmap', t.footer_roadmap);
+        this.updateElement('#footer-tokenomics', t.footer_tokenomics);
+        this.updateElement('#footer-newsletter', t.footer_newsletter);
+        this.updateElement('#newsletter-description', t.newsletter_description);
+        this.updateElement('#footer-get-touch', t.footer_get_touch);
+        this.updateElement('#footer-address', t.footer_address);
+        this.updateElement('#footer-follow-us', t.footer_follow_us);
+        this.updateElement('#social-description', t.social_description);
+        this.updateElement('#footer-copyright', t.footer_copyright);
+
+        // Update language flag
         if (!this.translations[lang]) {
             console.warn(`Translation for language '${lang}' not found`);
             return;
@@ -496,6 +688,24 @@ class TranslationSystem {
                 videoDescs[0].innerHTML = t.gallery_video1_desc;
                 videoTitles[1].innerHTML = t.gallery_video2_title;
                 videoDescs[1].innerHTML = t.gallery_video2_desc;
+            }
+
+            // Update FAQ section
+            this.updateElement(this.selectors.faq_title, t.faq_title);
+            this.updateElement(this.selectors.faq_subtitle, t.faq_subtitle);
+
+            // Update FAQ questions and answers
+            const faqQuestions = document.querySelectorAll(this.selectors.faq_questions);
+            const faqAnswers = document.querySelectorAll(this.selectors.faq_answers);
+            if (faqQuestions.length >= 4 && faqAnswers.length >= 4) {
+                faqQuestions[0].innerHTML = t.faq_q1;
+                faqAnswers[0].innerHTML = t.faq_a1;
+                faqQuestions[1].innerHTML = t.faq_q2;
+                faqAnswers[1].innerHTML = t.faq_a2;
+                faqQuestions[2].innerHTML = t.faq_q3;
+                faqAnswers[2].innerHTML = t.faq_a3;
+                faqQuestions[3].innerHTML = t.faq_q4;
+                faqAnswers[3].innerHTML = t.faq_a4;
             }
 
             // Update roadmap section
