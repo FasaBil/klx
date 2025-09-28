@@ -1,8 +1,6 @@
-// TranslationSystem class and initialization code
-// ...existing translation.js code here...
-// Translation System for KLX Digital Website
+// Translation System for KLX Digital Website  
 // Author: GitHub Copilot
-// Version: 1.0
+// Version: 2.0
 
 class TranslationSystem {
     constructor() {
