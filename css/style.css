@@ -535,7 +535,6 @@
         .legal-compliance-section {
             position: relative;
             padding: 120px 5%;
-            background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url('https://i.ibb.co/bJCg0T1/legal-bg.jpg');
             background-size: cover;
             background-position: center;
             z-index: 5;
