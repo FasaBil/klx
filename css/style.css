@@ -668,6 +668,10 @@
 
             .token-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                max-width: 100%;
+                margin: 20px auto 60px auto;
+                padding: 0 10px;
             }
         }
 
@@ -1022,6 +1026,46 @@
 
             .roadmap-section {
                 padding: 20px 5%;
+            }
+            
+            /* Fix token grid for mobile */
+            .token-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                max-width: 100%;
+                margin: 30px auto 60px auto;
+                padding: 0 15px;
+            }
+            
+            .token-feature-card {
+                padding: 15px;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            /* Fix roadmap timeline for mobile */
+            .timeline {
+                max-width: 100%;
+                margin: 30px auto 0;
+                padding: 15px;
+                overflow: hidden;
+            }
+            
+            .timeline-item {
+                padding-left: 40px;
+                margin-bottom: 30px;
+            }
+            
+            .timeline-content {
+                padding: 15px;
+                font-size: 0.85em;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            .timeline-content h3 {
+                font-size: 1.3em;
+                margin-bottom: 15px;
             }
 
             .timeline-wrapper {
