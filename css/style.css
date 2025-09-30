@@ -1263,3 +1263,158 @@
     width: 100%;
   }
 }
+
+/* === PARTNERS PAGE STYLES === */
+.partners-section, .partnership-section, .audit-section {
+    padding: 120px 5%;
+    position: relative;
+    z-index: 5;
+    background-color: rgba(10, 10, 10, 0.6);
+    text-align: center;
+}
+
+.partners-section .container,
+.partnership-section .container,
+.audit-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partner-card-single {
+    max-width: 1000px;
+    margin: 60px auto 0;
+    background-color: var(--card-background);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card-single:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
+}
+
+.partner-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 0;
+    align-items: center;
+    min-height: 200px;
+}
+
+.partner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #222;
+    height: 100%;
+}
+
+.partner-logo img {
+    max-width: 180px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.certik-logo img {
+    filter: invert(1);
+}
+
+.partner-info {
+    padding: 40px;
+    text-align: left;
+}
+
+.partner-info h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    margin: 0 0 20px 0;
+}
+
+.partner-info p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0 0 30px 0;
+}
+
+.partner-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: var(--primary-gold);
+    border: 2px solid var(--primary-gold);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.partner-button:hover {
+    background-color: var(--primary-gold);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.partner-button svg {
+    transition: transform 0.3s ease;
+}
+
+.partner-button:hover svg {
+    transform: scale(1.1);
+}
+
+/* Responsive Partner Styles */
+@media (max-width: 992px) {
+    .partner-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .partner-logo {
+        border-right: none;
+        border-bottom: 1px solid #222;
+        padding: 30px;
+    }
+    
+    .partner-info {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .partner-logo img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-section, .partnership-section, .audit-section {
+        padding: 80px 5%;
+    }
+    
+    .partner-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .partner-logo {
+        padding: 25px;
+    }
+    
+    .partner-info {
+        padding: 25px;
+    }
+    
+    .partner-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
